@@ -18,7 +18,7 @@ html{
 }
 
 .more-height{
-    height: 977px;
+    margin-top: 60px;
 }
 
 .zero-page{
@@ -227,8 +227,10 @@ html{
     color: #8f8f8f;
 }
 
-.menu__item:active{
+.menu__item_active{
+    transition: 0.7s;
     color: #8f8f8f;
+    border-bottom: 1px solid #8f8f8f;
 }
 
 /*about*/
@@ -283,26 +285,14 @@ html{
 .about__avatar img{
     width: 450px;
     height: 560px;
-
-    animation: about__avatar-translate 2s 1;
+    transform: translateX(-200px);
+    opacity: 0;
+    transition: 0.5s;
 }
 
-@keyframes about__avatar-translate{
-    0%{
-        transform: translateX(-200px);
-        opacity: 0;
-    }
-    100%{
-        opacity: 1;
-    }
-}
-
-@media{
-
-    .about__avatar img{
-         animation: about__avatar-translate 2s 1 linear;
-    }
-
+.about__avatar img.avatar__animation{
+    opacity: 1;
+    transform: translateX(0px);
 }
 
 
