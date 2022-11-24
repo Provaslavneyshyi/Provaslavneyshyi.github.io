@@ -225,12 +225,13 @@ html{
 
 .menu__item:hover{
     color: #8f8f8f;
+    border-bottom: 1px solid #8f8f8f;
 }
 
 .menu__item_active{
     transition: 0.7s;
     color: #8f8f8f;
-    border-bottom: 1px solid #8f8f8f;
+
 }
 
 /*about*/
