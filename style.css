@@ -247,13 +247,19 @@ body{
 
 .header{
     width: 100%;
-    max-width: 100vw;
-    min-width: 1200px;
+    display: flex;
+    justify-content: flex-end;
 }
+
+.menu__list{
+    width: 100%;
+    max-width: 1140px;
+}
+
 
 .header__menu li{
     width: 100%;
-    max-width: 100vw;
+    max-width: 1140px;
     display: flex;
     justify-content: flex-end;
     align-items: center;
