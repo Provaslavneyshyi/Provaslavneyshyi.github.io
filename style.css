@@ -1,3 +1,6 @@
+@import url(media.css);
+
+
 *{
     padding: 0;
     margin: 0;
@@ -40,20 +43,15 @@ h1,h2,h3,h4,h5,h6{font-size: inherit; font-weight: 400;}
 
 html{
     scroll-behavior: smooth;
-    width: 100%;
-    min-width: 1200px;
 }
 
 body{
-    height: 100%;
-    min-width: 1200px;
+    width: 100%;
+    height: auto;
 }
 
 .container{
-    max-width: 1200px;
-    width: 1140px;
-    height: 100%;
-    position: relative;
+    max-width: 1140px;
     margin: 0 auto;
     padding: 0 15px;
 }
@@ -75,8 +73,7 @@ body{
     background: url(img/dark-fon-2.jpg) no-repeat center center;
     background-attachment: fixed;
     width: 100%;
-    min-width: 1200px;
-    min-height: 100%;
+    height: 100vh;
     background-size: cover;
     background-position: center;
     display: flex;
@@ -93,8 +90,7 @@ body{
     background: url(img/dark-fon.jpg) no-repeat center center;
     background-attachment: fixed;
     width: 100%;
-    min-width: 1200px;
-    min-height: 100%;
+    height: 100vh;
     background-size: cover;
     background-position: center;
     display: flex;
@@ -168,6 +164,7 @@ body{
 
 .start-page__item{
     width: 100%;
+    font-size: 120px;
     height: 200px;
     background: #000000;
     opacity: 0.7;
@@ -179,7 +176,6 @@ body{
 .start-page__text{
     display: flex;
     text-transform: uppercase;
-    font-size: 120px;
     font-weight: 500;
     color: #fff;
     z-index: 10;
@@ -249,6 +245,7 @@ body{
     width: 100%;
     display: flex;
     justify-content: flex-end;
+    margin: 0 auto;
 }
 
 .menu__list{
@@ -259,7 +256,6 @@ body{
 
 .header__menu li{
     width: 100%;
-    max-width: 1140px;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -291,19 +287,19 @@ body{
 /*about*/
 
 .about{
-    min-width: 1200px;
-    max-width: 100vw;
-    height: 920px;
+    width: 100%;
+    height: auto;
     background: #f3f3f3;
     padding: 120px 0 100px 0;
     font: 300 14px/1.8 'Raleway',sans-serif;
+    margin: 0 auto;
 }
 
 .about__block{
     display: flex;
     justify-content: center;
-    height: 680px;
-    width: 1140px;
+    height: auto;
+    max-width: 100%;
     align-items: center;
 }
 
@@ -332,14 +328,15 @@ body{
 
 .about__avatar{
     display: block;
-    width: 450px;
-    height: 560px;
+    max-width: 450px;
+    max-height: 560px;
     position: relative;
 }
 
 .about__avatar img{
-    width: 450px;
-    height: 560px;
+    width: 100%;
+    height: auto;
+
     transform: translateX(-200px);
     opacity: 0;
     transition: 0.5s;
@@ -352,8 +349,8 @@ body{
 
 
 .about__list{
-    width: 600px;
-    height: 560px;
+    max-width: 600px;
+    height: auto;
     position: relative;
     padding: 5%;
 }
@@ -401,10 +398,12 @@ body{
 
 
 .skills{
-    min-width: 1200px;
-    height: 819px;
+    display: flex;
+    width: 100%;
+    height: auto;
     padding: 120px 0 100px 0;
     background: #D8D8D8;
+    margin: 0 auto;
 }
 
 .skill-title{
@@ -443,7 +442,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    width: 295px;
+    max-width: 295px;
     height: 285px;
     padding: 40px 35px;
     background: #fff;
@@ -458,7 +457,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 295px;
+    max-width: 295px;
     height: 187px;
     background: #fff;
     align-items: center;
@@ -479,10 +478,11 @@ body{
 /*works*/
 
 .works{
-    min-width: 1200px;
-    height: 1650px;
+    width: 100%;
+    height: auto;
     background: #fff;
     padding: 120px 0 100px 0;
+    margin: 0 auto;
 }
 
 .works__title{
@@ -513,7 +513,7 @@ body{
 
 .works-img{
     width: 555px;
-    height: 405px;
+    height: auto;
     box-shadow: 0px 0px 39px 6px rgba(34, 60, 80, 0.14);
 }
 
@@ -526,7 +526,6 @@ body{
 .works-row{
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
     padding-bottom: 40px;
 }
 
@@ -534,7 +533,7 @@ body{
     display: flex;
     flex-direction: column;
     width: 615px;
-    height: 405px;
+    height: auto;
     text-align: center;
     padding: 80px 50px 45px 30px;
     justify-content: space-between;
@@ -570,13 +569,13 @@ body{
 /*contact*/
 
 .contact{
-    min-width: 1200px;
-    display: flex;
-    justify-content: space-between;
     width: 100%;
-    height: 720px;
+    display: flex;
+    height: auto;
     padding: 120px 0 100px 0;
     background: #D8D8D8;
+    margin: 0 auto;
+
 }
 
 .contact__title{
@@ -607,6 +606,7 @@ body{
 
 .contact-message{
     display: flex;
+    width: 100%;
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: space-between;
@@ -617,7 +617,8 @@ body{
     left: 0;
     right: 0;
     margin: 0 auto;
-    width: 555px;
+    max-width: 555px;
+    width: 100%;
     padding: 0 15px;
     margin-bottom: 20px;
     font: 300 14px/1.8 'Raleway',sans-serif;
@@ -635,7 +636,8 @@ body{
 .contact__send{
     font: 400 14px/1.8 'Raleway',sans-serif;
     height: 45px;
-    width: 555px;
+    max-width: 800px;
+    width: 100%;
     position: relative;
     left: 0;
     right: 0;
@@ -647,7 +649,7 @@ body{
 
 .contact__text{
     max-width: 555px;
-    min-width: 555px;
+    width: 100%;
     position: relative;
     left: 0;
     right: 0;
@@ -655,6 +657,10 @@ body{
     padding: 15px;
     margin-bottom: 20px;
     font: 400 14px/1.8 'Raleway',sans-serif;
+}
+
+.contact-message textarea{
+    resize: none;
 }
 
 
@@ -670,7 +676,7 @@ body{
     align-items: center;
     color: #fff;
     font: 400 14px/1.8 'Raleway',sans-serif;
-
+    margin: 0 auto;
 }
 
 
