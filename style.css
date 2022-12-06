@@ -48,6 +48,7 @@ html{
 body{
     width: 100%;
     height: auto;
+    overflow-x: hidden;
 }
 
 .container{
@@ -65,7 +66,7 @@ body{
 }
 
 .more-height{
-    margin-top: 60px;
+    margin-top: 190px;
 }
 
 .zero-page{
@@ -185,14 +186,14 @@ body{
 
 .start-page__text::before{
     display: inline;
-    font-size: 30px;
+    font-size: 0.3em;
     content: "Sergey Stollas"
 }
 
 .start-page__text::after{
     display: inline;
     content: "web-верстальщик frontend developer";
-    font-size: 18px;
+    font-size: 0.2em;
 }
 
 .start-page__scroll{
@@ -243,25 +244,21 @@ body{
 
 .header{
     width: 100%;
-    display: flex;
-    justify-content: flex-end;
     margin: 0 auto;
+    height: 60px;
 }
 
 .menu__list{
-    width: 100%;
-    max-width: 1140px;
-}
-
-
-.header__menu li{
-    width: 100%;
     display: flex;
     justify-content: flex-end;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: nowrap;
 }
+
+.menu__list li a{
+    display: flex;
+    justify-content: flex-end;
+
+}
+
 
 .menu__item{
     color: #000;
@@ -346,7 +343,6 @@ body{
     opacity: 1;
     transform: translateX(0px);
 }
-
 
 .about__list{
     max-width: 600px;
@@ -681,7 +677,7 @@ body{
 
 
 
-
+@import url(media.css);
 
 
 
