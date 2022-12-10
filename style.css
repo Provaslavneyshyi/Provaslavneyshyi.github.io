@@ -23,6 +23,7 @@ html, body{
     font-size: 100%;
     line-height: 1;
     font-size: 14px;
+    margin: 0 auto;
     ms-text-size-adjust: 100%;
     moz-text-size-adjust: 100%;
     webkit-text-size-adjust: 100%;
@@ -41,14 +42,20 @@ img{vertical-align: top;}
 h1,h2,h3,h4,h5,h6{font-size: inherit; font-weight: 400;}
 
 
+*{
+    max-width: 100% !important;
+    overflow-x: hidden;
+}
+
 html{
     scroll-behavior: smooth;
+
 }
 
 body{
     width: 100%;
     height: auto;
-    overflow-x: hidden;
+
 }
 
 .container{
@@ -207,7 +214,7 @@ body{
     bottom: 30px;
     background: none;
     justify-content: center;
-
+    margin: 0;
 
 }
 
@@ -298,6 +305,7 @@ body{
     height: auto;
     max-width: 100%;
     align-items: center;
+    margin-bottom: 30px;
 }
 
 .about__title{
@@ -454,7 +462,7 @@ body{
     flex-direction: column;
     justify-content: space-between;
     max-width: 295px;
-    height: 187px;
+    height: auto;
     background: #fff;
     align-items: center;
     padding: 40px 35px;
@@ -508,7 +516,7 @@ body{
 }
 
 .works-img{
-    width: 555px;
+    max-width: 555px;
     height: auto;
     box-shadow: 0px 0px 39px 6px rgba(34, 60, 80, 0.14);
 }
@@ -528,7 +536,7 @@ body{
 .works-block{
     display: flex;
     flex-direction: column;
-    width: 615px;
+    max-width: 615px;
     height: auto;
     text-align: center;
     padding: 80px 50px 45px 30px;
@@ -585,7 +593,8 @@ body{
     font-weight: 800;
     letter-spacing: 4px;
     padding-bottom: 20px;
-    margin-bottom: 35px
+    margin-bottom: 35px;
+    word-wrap: break-word;
 }
 
 .contact__title::before{
